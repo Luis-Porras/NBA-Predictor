@@ -3,6 +3,8 @@
 
 The "NBA Predictor" is a python project which calcuates whether a home team would win (1) or lose (0) a given matchup using the sklearn machine learning library. 
 
+# Using the predictor 
+Change the "path" variable in the main_scripts/main.py file to any of the .csv files from the nba_data folder. Run each cell in main.py. 
 
 # Data Collection
 
@@ -37,7 +39,9 @@ __Average score__: This is still feasible, but currently has not been a good fit
 All models used are supervised machine learning models. 
 
 Models: Logistic Regression, Random Forest Classifier, Support Vector Classifier
-Final Features: allstar count, losing streak, winning streak, time away 
+
+Final Features: allstar count, losing streak, winning streak, time away
+
 Target: Home win (1, 0) 
 
 80% Training data (980 games) 
@@ -58,7 +62,7 @@ Scaling features seems to cause some accuracy problems, but scaling function is 
 
 # Picking Winners/ Gambling Theory 
 
-In some of the exploratory test scripts, my goal was to return the predictions with the highest probability of occurring. The model would return those games in which it was 99% confident that the prediction was correct. Of the 250 games in a season's testing set, the model returned only 5-10 games per season in which it was very confident of its choice. These games were usually all correct, but this does not mean the project is strong enough to use for betting on more than a handful of games. 
+In some of the exploratory test scripts, my goal was to return the predictions with the highest probability of occurring. The model would return those games in which it was 99% confident that the prediction was correct. Of the 250 games in a season's testing set, the model returned only 5-10 games per season in which it was very confident of its choice. Even though these "confident" picks were only around 2-4% of the testing size, these games were usually all correct.
 
 While the predictions made by the models are around a 60-65% accuracy score for the years tested, win/loss bets do not guarantee that a gambler is profitable, even if above a 50% win rate. This is due to small payouts for wins from favorited teams. A single missed bet can wipe the accumulated winnings gained from 3 or more correct picks.  
 
@@ -66,12 +70,12 @@ A better approach to picking bets is the Kelly Criterion, in which bet sizing an
 
 
 # Future Fixes
--Cross Validation Train/Test
+-Cross Validation 
 -Target class imbalance. Maybe upsample/downsample 
 -Web scraping for bench rosters
 -Injury reports API https://www.fantasybasketballnerd.com/fantasy-basketball-api#injuries
 -Machine learning pipeline 
--Tensorflow CNN...
+-Tensorflow vs Sci-kit learn
 
 
 
