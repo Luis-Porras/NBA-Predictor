@@ -6,6 +6,8 @@ The "NBA Predictor" is a python project which calcuates whether a home team woul
 # Using the predictor 
 Change the "path" variable in the main_scripts/main.py file to any of the .csv files from the nba_data folder. Run each cell in main.py. 
 
+
+## Methodology
 # Data Collection
 
 Basketball-reference.com keeps historical NBA data such as match results, full team rosters, individual player stats, and detailed league leader stats as free, downloadable .CSV files. 
